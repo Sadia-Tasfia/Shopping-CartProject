@@ -50,7 +50,7 @@ document.getElementById("btn-case-plus").addEventListener('click', function(){
   // updateCaseNumber(true);
   const newNumber= updateCaseNumber(true);
   updateCaseTotalPrice(newNumber);
-  
+  calculateSubTotal();
 });
 
 document.getElementById("btn-case-minus").addEventListener('click', function(){
@@ -61,5 +61,7 @@ document.getElementById("btn-case-minus").addEventListener('click', function(){
   */
 
   const newNumber = updateCaseNumber(false);
-  updateCaseTotalPrice(newNumber)
+  updateCaseTotalPrice(newNumber);
+  calculateSubTotal();
+
 });
